@@ -2,6 +2,9 @@
 
 A modern and responsive SaaS (Software as a Service) company website built with Flask, HTML, CSS, and JavaScript. This project serves as a professional business landing page designed to showcase SaaS products, services, company information, and customer engagement features.
 
+##Render
+https://saas-labs-website.onrender.com/blogs
+
 ## Overview
 
 The SaaS Labs Website is designed to provide businesses with a clean, modern, and scalable web presence. It combines a lightweight Flask backend with a responsive frontend to deliver a fast and user-friendly experience across desktop, tablet, and mobile devices.
