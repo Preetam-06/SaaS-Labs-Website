@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Frequently Asked Questions | SaaS Labs Software Development Company</title>
+    <meta name="description"
+content="Frequently asked questions about SaaS Labs. Learn about our software development services, AI integration, cloud solutions, DevOps, project timelines, and support." />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Fjalla+One&family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <link rel="stylesheet" href="{{url_for('static', filename='assets/css/faqs.css')}}">
+</head>
+<body>
+<nav class="navbar">
+    <div class="logo-container">
+        <a href="{{url_for('routes.index')}}" class="nav-logo">SaaS Labs</a>
+    </div>
+
+    <input type="checkbox" id="nav-toggle" class="nav-toggle">
+    <label for="nav-toggle" class="menu-button" aria-label="Toggle navigation">
+        <span></span>
+        <span></span>
+        <span></span>
+    </label>
+
+    <div class="menu-container">
+        <ul class="nav-menu">
+            <li><a href="{{url_for('routes.index')}}" class="nav-links">Home</a></li>
+            <li><a href="{{url_for('routes.about')}}" class="nav-links">About</a></li>
+            <li><a href="{{url_for('routes.services')}}" class="nav-links">Services</a></li>
+            <li><a href="{{url_for('routes.blogs')}}" class="nav-links">Blogs</a></li>
+            <li><a href="{{url_for('routes.faqs')}}" class="nav-links">FAQs</a></li>
+        </ul>
+    </div>
+</nav>
+
+<main class="faq-page home-container">
+    <section class="faq-hero">
+        <div class="faq-shell">
+            <p class="faq-label">FAQs</p>
+            <h1>Frequently Asked Questions About SaaS Labs</h1>
+            <p class="faq-intro">
+                Learn more about our software development services, AI integration,
+                web application development, cloud solutions, DevOps practices,
+                project timelines, and support options.
+            </p>
+        </div>
+    </section>
+
+<div class="accordion faq-accordion" id="faqAccordion">
+    <div class="accordion-item">
+        <h2 class="accordion-header" id="faqOneHeading">
+            <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#faqOne">
+                What software development services does SaaS Labs provide?
+            </button>
+        </h2>
+        <div id="faqOne" class="accordion-collapse collapse show" data-bs-parent="#faqAccordion">
+            <div class="accordion-body">
+                SaaS Labs provides custom software development, enterprise web applications,
+                AI integration, cloud solutions, DevOps services, API development,
+                SaaS platforms, and digital transformation consulting.
+            </div>
+        </div>
+    </div>
+
+    <div class="accordion-item">
+        <h2 class="accordion-header" id="faqTwoHeading">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faqTwo">
+                Can SaaS Labs build custom web applications for businesses?
+            </button>
+        </h2>
+        <div id="faqTwo" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+            <div class="accordion-body">
+                Yes. We develop scalable and secure custom web applications tailored
+                to startups, SMEs, and enterprise organizations.
+            </div>
+        </div>
+    </div>
+
+    <div class="accordion-item">
+        <h2 class="accordion-header" id="faqThreeHeading">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faqThree">
+                Do you offer AI and machine learning integration services?
+            </button>
+        </h2>
+        <div id="faqThree" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+            <div class="accordion-body">
+                Yes. We integrate AI-powered chatbots, automation systems,
+                machine learning models, recommendation engines, and intelligent
+                business workflows into software products.
+            </div>
+        </div>
+    </div>
+
+    <div class="accordion-item">
+        <h2 class="accordion-header" id="faqFourHeading">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faqFour">
+                How long does a software development project take?
+            </button>
+        </h2>
+        <div id="faqFour" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+            <div class="accordion-body">
+                Timelines vary based on project complexity. Small business applications
+                may take a few weeks, while enterprise systems can take several months.
+            </div>
+        </div>
+    </div>
+
+    <div class="accordion-item">
+        <h2 class="accordion-header" id="faqFiveHeading">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faqFive">
+                Do you provide cloud migration and DevOps services?
+            </button>
+        </h2>
+        <div id="faqFive" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+            <div class="accordion-body">
+                Yes. We help businesses migrate applications to the cloud,
+                implement CI/CD pipelines, automate deployments, and improve
+                infrastructure scalability.
+            </div>
+        </div>
+    </div>
+
+    <div class="accordion-item">
+        <h2 class="accordion-header" id="faqSixHeading">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faqSix">
+                What technologies do your developers use?
+            </button>
+        </h2>
+        <div id="faqSix" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+            <div class="accordion-body">
+                We work with Python, Flask, Django, JavaScript, React,
+                PostgreSQL, Docker, cloud platforms, AI frameworks,
+                and modern DevOps tools.
+            </div>
+        </div>
+    </div>
+
+    <div class="accordion-item">
+        <h2 class="accordion-header" id="faqSevenHeading">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faqSeven">
+                Do you work with startups and enterprise companies?
+            </button>
+        </h2>
+        <div id="faqSeven" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+            <div class="accordion-body">
+                Yes. We support startups launching their first product,
+                growing businesses scaling operations, and enterprises
+                modernizing legacy systems.
+            </div>
+        </div>
+    </div>
+
+    <div class="accordion-item">
+        <h2 class="accordion-header" id="faqEightHeading">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faqEight">
+                Why choose SaaS Labs for software development?
+            </button>
+        </h2>
+        <div id="faqEight" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+            <div class="accordion-body">
+                We combine engineering expertise, modern architecture,
+                AI capabilities, and business-focused thinking to create
+                secure, scalable, and future-ready software solutions.
+            </div>
+        </div>
+    </div>
+</div>
+
+</main>
+
+<footer class="footer">
+    <p>&copy; 2026 SaaS Labs. All rights reserved.</p>
+</footer>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
+
+</body>
+</html>

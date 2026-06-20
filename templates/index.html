@@ -1,0 +1,281 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Project</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Fjalla+One&family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <link rel="stylesheet" href="{{url_for('static', filename='assets/css/style.css')}}">
+</head>
+<body>
+<nav class="navbar">
+    <div class="logo-container">
+        <a href="{{url_for('routes.index')}}" class="nav-logo">SaaS Labs</a>
+    </div>
+
+    <input type="checkbox" id="nav-toggle" class="nav-toggle">
+    <label for="nav-toggle" class="menu-button" aria-label="Toggle navigation">
+        <span></span>
+        <span></span>
+        <span></span>
+    </label>
+
+    <div class="menu-container">
+        <ul class="nav-menu">
+            <li><a href="{{url_for('routes.index')}}" class="nav-links">Home</a></li>
+            <li><a href="{{url_for('routes.about')}}" class="nav-links">About</a></li>
+            <li><a href="{{url_for('routes.services')}}" class="nav-links">Services</a></li>
+            <li><a href="{{url_for('routes.blogs')}}" class="nav-links">Blogs</a></li>
+            <li><a href="{{url_for('routes.faqs')}}" class="nav-links">FAQs</a></li>
+        </ul>
+    </div>
+</nav>
+
+<main class="home-container">
+    <h1 class="h1_home">Building Intelligent Digital<br>Experiences for the Modern World</h1>
+    <img src="{{url_for('static', filename='assets/images/3d-render-code-testing-functional-test-usability-removebg-preview.png')}}"
+        alt="Home Image"
+        class="home-image">
+    <p class="home-description">We design and develop scalable web applications, AI-powered systems, and enterprise-grade digital solutions for modern businesses..</p>
+    <p class="home-description">SaaS Labs Technologies is a next-generation software engineering company focused on creating high-performance, scalable, and intelligent digital products. We combine design thinking, engineering excellence, and artificial intelligence to build future-ready systems that solve real-world problems.</p>
+</main>
+
+<section class="stats-section">
+    <div class="stat-box card">
+        <h2>50+</h2>
+        <p>Projects Delivered</p>
+    </div>
+
+    <div class="stat-box card">
+        <h2>27+</h2>
+        <p>Enterprise Clients</p>
+    </div>
+
+    <div class="stat-box card">
+        <h2>96%</h2>
+        <p>Client Satisfaction</p>
+    </div>
+
+    <div class="stat-box card">
+        <h2>24/7</h2>
+        <p>Support Available</p>
+    </div>
+</section>
+<section>
+<div class="gallery-container fade-in">
+    <div class="cards card">
+        <h3 class="card-title">Enterprise Web Development</h3>
+        <img src="{{url_for('static', filename='assets/images/web_development.jpg')}}" alt="Gallery Image 1" class="gallery-image">
+        <p class="card-description">We build fast, secure, and scalable web applications using modern technologies and clean architecture principles.</p>
+    </div>
+    <div class="cards card">
+        <h3 class="card-title">AI Integration</h3>
+        <img src="{{url_for('static', filename='assets/images/ai_integration.jpg')}}" alt="Gallery Image 2" class="gallery-image">
+        <p class="card-description">We integrate artificial intelligence into business workflows to automate tasks, improve efficiency, and enable smarter decision-making.</p>
+    </div>
+    <div class="cards card">
+        <h3 class="card-title" >Cloud & DevOps Solutions</h3>
+        <img src="{{url_for('static', filename='assets/images/devops.jpg')}}" alt="Gallery Image 3" class="gallery-image">
+        <p class="card-description">We design and deploy cloud-native infrastructure with CI/CD pipelines, ensuring reliable, scalable, and efficient system performance.</p>
+
+    </div>
+    <div class="cards card">
+        <h3 class="card-title">Custom Software Development</h3>
+        <img src="{{url_for('static', filename='assets/images/software_dev.jpg')}}" alt="Gallery Image 4" class="gallery-image">
+        <p class="card-description">We design and develop custom software solutions tailored to meet the unique needs of your business.</p>
+    </div>
+</div>
+</section>
+<section class="why-us-section">
+    <h2 class="section-title">Why Choose SaaS Labs?</h2>
+
+    <div class="why-grid">
+
+        <div class="cards">
+            <h3 class="card-title">⚡ Fast Delivery</h3>
+            <p class="card-description">
+                Agile workflows and rapid deployment cycles.
+            </p>
+        </div>
+
+        <div class="cards">
+            <h3 class="card-title">🔒 Secure Solutions</h3>
+            <p class="card-description">
+                Enterprise-grade security built into every project.
+            </p>
+        </div>
+
+        <div class="cards">
+            <h3 class="card-title">☁ Cloud Native</h3>
+            <p class="card-description">
+                Scalable cloud infrastructure for modern applications.
+            </p>
+        </div>
+
+        <div class="cards">
+            <h3 class="card-title">🤖 AI Powered</h3>
+            <p class="card-description">
+                Integrating AI to automate and optimize business operations.
+            </p>
+        </div>
+
+    </div>
+</section>
+
+<section class="process-section">
+    <h2 class="section-title">Our Process</h2>
+
+    <div class="process-grid">
+
+        <div class="card process-card">
+            <h3>1. Discovery</h3>
+            <p>Understanding business goals and requirements.</p>
+        </div>
+
+        <div class="card process-card">
+            <h3>2. Design</h3>
+            <p>Creating intuitive UI/UX and scalable architecture.</p>
+        </div>
+
+        <div class="card process-card">
+            <h3>3. Development</h3>
+            <p>Building robust and secure software solutions.</p>
+        </div>
+
+        <div class="card process-card">
+            <h3>4. Launch</h3>
+            <p>Testing, deployment and continuous optimization.</p>
+        </div>
+
+    </div>
+</section>
+
+<section class="testimonials-section">
+    <h2 class="section-title">Client Testimonials</h2>
+    <div class="testimonial-grid">
+        <div class="card testimonial-card">
+            <p>
+                "Outstanding team. They delivered our platform ahead of schedule."
+            </p>
+            <h4>Rahul Sharma</h4>
+        </div>
+        <div class="card testimonial-card">
+            <p>
+                "Excellent communication and technical expertise."
+            </p>
+            <h4>Priya Patel</h4>
+        </div>
+        <div class="card testimonial-card">
+            <p>
+                "Our AI automation project exceeded expectations."
+            </p>
+            <h4>Arjun Mehta</h4>
+        </div>
+    </div>
+</section>
+
+<section class="faq-section">
+    <h2 class="faq-title">Frequently Asked Questions <br>(FAQs)<br> </h2>
+    <div class="faq-container">
+        <details class="faq-item card">
+            <summary>What software development services does SaaS Labs provide?</summary>
+            <p>
+                SaaS Labs provides custom software development, web application development,
+                AI integration, cloud solutions, DevOps services, API development,
+                enterprise software engineering, and digital transformation consulting.
+            </p>
+        </details>
+
+        <details class="faq-item card">
+            <summary>Can SaaS Labs build custom web applications for businesses?</summary>
+            <p>
+                Yes. We design and develop scalable custom web applications tailored to
+                startups, SMEs, and enterprise organizations using modern technologies
+                and cloud-native architectures.
+            </p>
+        </details>
+
+        <details class="faq-item card">
+            <summary>Do you offer AI and machine learning integration services?</summary>
+            <p>
+                Yes. We integrate artificial intelligence, machine learning models,
+                automation systems, chatbots, recommendation engines, and data-driven
+                solutions into existing and new applications.
+            </p>
+        </details>
+
+        <details class="faq-item card">
+            <summary>How long does a software development project take?</summary>
+            <p>
+                Project timelines depend on complexity and scope. Small applications
+                may take a few weeks, while enterprise platforms can take several
+                months from planning to deployment.
+            </p>
+        </details>
+        <details class="faq-item card">
+            <summary>Do you provide cloud migration and DevOps services?</summary>
+            <p>
+                Yes. We help businesses migrate applications to the cloud, implement
+                CI/CD pipelines, automate deployments, and improve infrastructure
+                reliability and scalability.
+            </p>
+        </details>
+    </div>
+
+</section>
+
+<section class="contact-container">
+    <div class="contact-card card">
+        <div class="contact-left">
+            <h2>Get In Touch</h2>
+            <p>
+                Have a project in mind? We'd love to hear from you.
+                Let's discuss how we can help your business grow.
+            </p>
+            <div class="contact-detail">
+                <strong>📧 Email</strong>
+                <span>contact@SaaSLabs.com</span>
+            </div>
+            <div class="contact-detail">
+                <strong>📞 Phone</strong>
+                <span>+91 90000 00000</span>
+            </div>
+            <div class="contact-detail">
+                <strong>📍 Location</strong>
+                <span>Mumbai, Maharashtra, India</span>
+            </div>
+        </div>
+        <div class="contact-right">
+            <form>
+                <input
+                    type="text"
+                    placeholder="Your Name"
+                    required
+                >
+                <input
+                    type="email"
+                    placeholder="Your Email"
+                    required
+                >
+                <textarea
+                    placeholder="Your Message"
+                    rows="6"
+                    required
+                ></textarea>
+                <button type="submit">
+                    Send Message
+                </button>
+            </form>
+        </div>
+    </div>
+</section>
+
+<footer class="footer">
+    <p>&copy; 2026 SaaS Labs. All rights reserved.</p>
+</footer>
+
+</body>
+</html>

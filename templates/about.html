@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Us | SaaS Labs</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Fjalla+One&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="{{url_for('static', filename='assets/css/style.css')}}">
+    <link rel="stylesheet" href="{{url_for('static', filename='assets/css/about.css')}}">
+</head>
+<body>
+
+<nav class="navbar">
+    <div class="logo-container">
+        <a href="{{url_for('routes.index')}}" class="nav-logo">SaaS Labs</a>
+    </div>
+
+    <input type="checkbox" id="nav-toggle" class="nav-toggle">
+    <label for="nav-toggle" class="menu-button" aria-label="Toggle navigation">
+        <span></span>
+        <span></span>
+        <span></span>
+    </label>
+
+    <div class="menu-container">
+        <ul class="nav-menu">
+            <li><a href="{{url_for('routes.index')}}" class="nav-links">Home</a></li>
+            <li><a href="{{url_for('routes.about')}}" class="nav-links">About</a></li>
+            <li><a href="{{url_for('routes.services')}}" class="nav-links">Services</a></li>
+            <li><a href="{{url_for('routes.blogs')}}" class="nav-links">Blogs</a></li>
+            <li><a href="{{url_for('routes.faqs')}}" class="nav-links">FAQs</a></li>
+        </ul>
+    </div>
+</nav>
+
+<main>
+    <section class="about-hero">
+        <div class="about-shell hero-grid">
+            <div class="about-copy">
+                <p class="eyebrow">About SaaS Labs</p>
+                <h1>Engineering reliable digital products for ambitious businesses.</h1>
+                <p class="lead-copy">
+                    We help organizations design, build, and scale modern software systems that are secure,
+                    efficient, and ready for long-term growth.
+                </p>
+
+                <div class="hero-points">
+                    <span>Enterprise web platforms</span>
+                    <span>Cloud-native delivery</span>
+                    <span>AI-driven workflows</span>
+                </div>
+
+                <div class="hero-actions">
+                    <a href="#contact" class="primary-action">Talk to our team</a>
+                    <a href="{{url_for('routes.services')}}" class="secondary-action">Explore services</a>
+                </div>
+            </div>
+
+            <div class="hero-panel">
+                <img src="{{url_for('static', filename='assets/images/about-company.jpg')}}" alt="SaaS Labs team working on strategy and development" class="hero-image">
+                <div class="hero-metrics">
+                    <div>
+                        <strong>10+</strong>
+                        <span>Years of combined experience</span>
+                    </div>
+                    <div>
+                        <strong>50+</strong>
+                        <span>Solutions delivered</span>
+                    </div>
+                    <div>
+                        <strong>24/7</strong>
+                        <span>Support mindset</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="about-section">
+        <div class="about-shell split-grid">
+            <div>
+                <p class="section-label">Who We Are</p>
+                <h2>A technology partner built for modern business demands.</h2>
+            </div>
+            <div class="content-card card">
+                <p>
+                    SaaS Labs is a modern software engineering and technology company focused on delivering
+                    innovative digital products for startups, enterprises, and growing businesses.
+                </p>
+                <p>
+                    We specialize in web development, cloud infrastructure, artificial intelligence integration,
+                    and custom software solutions that help organizations streamline operations, improve customer
+                    experiences, and accelerate growth.
+                </p>
+                <p>
+                    Our team combines technical expertise, creativity, and a problem-solving mindset to build
+                    scalable, secure, and future-ready applications.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <section class="about-section muted-section">
+        <div class="about-shell">
+            <div class="section-heading centered">
+                <p class="section-label">Mission & Vision</p>
+                <h2>Clear direction. Practical execution. Measurable outcomes.</h2>
+            </div>
+
+            <div class="mission-grid">
+                <article class="info-card card">
+                    <h3>Our Mission</h3>
+                    <p>
+                        To empower businesses through innovative software, intelligent automation, and cutting-edge
+                        technology solutions that create measurable value.
+                    </p>
+                </article>
+
+                <article class="info-card card">
+                    <h3>Our Vision</h3>
+                    <p>
+                        To become a globally trusted technology partner known for engineering excellence,
+                        innovation, and impactful digital transformation.
+                    </p>
+                </article>
+            </div>
+        </div>
+    </section>
+
+    <section class="about-section">
+        <div class="about-shell">
+            <div class="section-heading centered">
+                <p class="section-label">Core Values</p>
+                <h2>The standards that shape every engagement.</h2>
+                <p class="lead-copy">
+                    These values guide how we plan, communicate, deliver, and support every solution we build.
+                </p>
+            </div>
+
+            <div class="value-grid">
+                <article class="value-card card">
+                    <h4>Innovation</h4>
+                    <p>Leveraging emerging technologies to solve real-world challenges.</p>
+                </article>
+                <article class="value-card card">
+                    <h4>Quality</h4>
+                    <p>Delivering secure, scalable, and maintainable software.</p>
+                </article>
+                <article class="value-card card">
+                    <h4>Integrity</h4>
+                    <p>Building long-term relationships through transparency and trust.</p>
+                </article>
+                <article class="value-card card">
+                    <h4>Collaboration</h4>
+                    <p>Working closely with clients to achieve shared success.</p>
+                </article>
+                <article class="value-card card">
+                    <h4>Accountability</h4>
+                    <p>Owning outcomes, communicating clearly, and following through on commitments.</p>
+                </article>
+                <article class="value-card card">
+                    <h4>Customer Success</h4>
+                    <p>Measuring our work by the tangible impact it creates for clients.</p>
+                </article>
+                <article class="value-card card">
+                    <h4>Adaptability</h4>
+                    <p>Staying flexible as priorities, technologies, and business needs evolve.</p>
+                </article>
+                <article class="value-card card">
+                    <h4>Security</h4>
+                    <p>Designing solutions with reliability, privacy, and protection in mind.</p>
+                </article>
+            </div>
+        </div>
+    </section>
+
+    <section class="about-section muted-section">
+        <div class="about-shell">
+            <div class="section-heading centered">
+                <p class="section-label">Why Choose Us</p>
+                <h2>A professional team with a strong delivery mindset.</h2>
+            </div>
+
+            <div class="why-grid">
+                <article class="why-card card">
+                    <h4>Expert Team</h4>
+                    <p>Experienced developers, architects, and technology specialists committed to excellence.</p>
+                </article>
+                <article class="why-card card">
+                    <h4>Modern Technologies</h4>
+                    <p>We utilize the latest frameworks, cloud platforms, and AI technologies.</p>
+                </article>
+                <article class="why-card card">
+                    <h4>Client-Focused Approach</h4>
+                    <p>Every solution is tailored to your business goals and long-term success.</p>
+                </article>
+            </div>
+        </div>
+    </section>
+
+    <section class="about-section cta-section" id="contact">
+        <div class="about-shell cta-card card">
+            <p class="section-label">Let’s Talk</p>
+            <h2>Let’s build something great together.</h2>
+            <p>
+                Whether you're launching a startup, modernizing enterprise systems, or integrating AI into your
+                workflow, SaaS Labs is ready to help.
+            </p>
+            <a href="mailto:contact@SaaSLabs.com" class="primary-action">Contact Us</a>
+        </div>
+    </section>
+</main>
+
+<footer class="footer">
+    <p>&copy; 2026 SaaS Labs. All rights reserved.</p>
+</footer>
+
+<script src="/static/assets/js/about.js"></script>
+
+</body>
+</html>

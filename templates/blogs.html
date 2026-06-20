@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+   <head>
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <title>Blogs | SaaS Labs</title>
+      <link rel="preconnect" href="https://fonts.googleapis.com">
+      <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+      <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Fjalla+One&display=swap"
+         rel="stylesheet">
+      <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet">
+      <link rel="stylesheet" href="{{url_for('static', filename='assets/css/style.css')}}">
+      <link rel="stylesheet" href="{{url_for('static', filename='assets/css/blogs.css')}}">
+   </head>
+   <body>
+      <!-- Navbar -->
+      <nav class="navbar">
+         <div class="logo-container">
+            <a href="{{url_for('routes.index')}}" class="nav-logo">SaaS Labs</a>
+         </div>
+
+         <input type="checkbox" id="nav-toggle" class="nav-toggle">
+         <label for="nav-toggle" class="menu-button" aria-label="Toggle navigation">
+            <span></span>
+            <span></span>
+            <span></span>
+         </label>
+
+         <div class="menu-container">
+            <ul class="nav-menu">
+                  <li><a href="{{url_for('routes.index')}}" class="nav-links">Home</a></li>
+                  <li><a href="{{url_for('routes.about')}}" class="nav-links">About</a></li>
+                  <li><a href="{{url_for('routes.services')}}" class="nav-links">Services</a></li>
+                  <li><a href="{{url_for('routes.blogs')}}" class="nav-links">Blogs</a></li>
+                  <li><a href="{{url_for('routes.faqs')}}" class="nav-links">FAQs</a></li>
+            </ul>
+         </div>
+      </nav>
+      <main>
+         <!-- Blog Hero -->
+         <section class="blog-hero">
+            <div class="blog-container">
+               <p class="section-label">
+                  SaaS Labs Insights
+               </p>
+               <h1>
+                  Latest Technology & Business Blogs
+               </h1>
+               <p>
+                  Explore insights about software development, artificial intelligence,
+                  cloud computing, SaaS products, and modern technology trends.
+               </p>
+            </div>
+         </section>
+         <!-- Blog Listing -->
+         <section class="blogs-section">
+            <div class="blog-container">
+               <div class="blog-grid">
+                  <!-- Blog Card -->
+                   {% for blog in blogs %}
+                  <article class="blog-card">
+                     <img src="{{blog.hero_image.url}}"
+                        alt="{{blog.hero_image.alt}}" class="blog-image">
+                     <div class="blog-content">
+                        <span class="blog-category">
+                        {{blog.category}}
+                        </span>
+                        <h2>
+                           {{blog.title}}
+                        </h2>
+                        <p>
+                           {{blog.published_date}}
+                        </p>                        
+                        <a href="{{url_for('blog_details', blog_id=blog.id)}}" class="read-more" >
+                        Read More →
+                        </a>
+                     </div>
+                  </article>
+                  {% endfor %}
+               </div>
+            </div>
+         </section>
+      </main>
+      <footer class="footer">
+         <p>
+            &copy; 2026 SaaS Labs. All rights reserved.
+         </p>
+      </footer>
+   </body>
+</html>

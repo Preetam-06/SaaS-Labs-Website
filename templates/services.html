@@ -1,0 +1,325 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Services | SaaS Labs</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Fjalla+One&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="{{url_for('static', filename='assets/css/style.css')}}">
+    <link rel="stylesheet" href="{{url_for('static', filename='assets/css/service.css')}}">
+</head>
+<body>
+
+<nav class="navbar">
+    <div class="logo-container">
+        <a href="{{url_for('routes.index')}}" class="nav-logo">SaaS Labs</a>
+    </div>
+
+    <input type="checkbox" id="nav-toggle" class="nav-toggle">
+    <label for="nav-toggle" class="menu-button" aria-label="Toggle navigation">
+        <span></span>
+        <span></span>
+        <span></span>
+    </label>
+
+    <div class="menu-container">
+        <ul class="nav-menu">
+            <li><a href="{{url_for('routes.index')}}" class="nav-links">Home</a></li>
+            <li><a href="{{url_for('routes.about')}}" class="nav-links">About</a></li>
+            <li><a href="{{url_for('routes.services')}}" class="nav-links">Services</a></li>
+            <li><a href="{{url_for('routes.blogs')}}" class="nav-links">Blogs</a></li>
+            <li><a href="{{url_for('routes.faqs')}}" class="nav-links">FAQs</a></li>
+        </ul>
+    </div>
+</nav>
+
+<main>
+    <section class="services-hero">
+        <div class="services-shell hero-grid">
+            <div class="services-copy">
+                <p class="eyebrow">OUR Services</p>
+                <h1>Building Intelligent Digital Solutions for Modern Businesses</h1>
+                <p class="lead-copy">
+                    At SaaS Labs, we help businesses transform ideas into powerful digital products through custom software development, 
+                    artificial intelligence, cloud engineering, and scalable SaaS solutions.
+                    <br>Our team builds secure, high-performance technology solutions that improve operations, 
+                    automate processes, and help companies grow in the digital era.<br>
+                </p>
+
+                <div class="hero-points">
+                    <span>Enterprise web platforms</span>
+                    <span>Cloud-native delivery</span>
+                    <span>AI-driven workflows</span>
+                </div>
+
+                <div class="hero-actions">
+                    <a href="#contact" class="primary-action">Talk to our team</a>
+                    <a href="services.html" class="secondary-action">Explore services</a>
+                </div>
+            </div>
+
+            <div class="hero-panel">
+                <img src="{{url_for('static', filename='assets/images/services-company.jpg')}}" alt="SaaS Labs team working on strategy and development" class="hero-image">
+                <div class="hero-metrics">
+                    <div>
+                        <span>Custom Software Development</span>
+                    </div>
+                    <div>
+                        <span>Artificial Intelligence Solutions</span>
+                    </div>
+                    <div>
+                        <span>Cloud Engineering</span>
+                    </div>
+                    <div>
+                        <span>SaaS Product Development</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="services-section">
+        <div class="services-shell split-grid">
+            <div>
+                <p class="section-label">Technology Services We Provide</p>
+                <h2>Custom Software Development</h2>
+            </div>
+            <div class="content-card card">
+                <p>
+                    We create customized software solutions designed around your unique business requirements. 
+                    Our development approach focuses on scalability, security, performance, and long-term growth.
+                </p>
+                <div>
+                    <p class="we-provide">What we provide:</p>
+                    <ul class="list-provide">
+                        <li>Business automation software</li>
+                        <li>Enterprise applications</li>
+                        <li>Internal management systems</li>
+                        <li>Workflow automation platforms</li>
+                        <li>Database-driven applications</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div>
+                <h2>Web Application Development</h2>
+            </div>
+            <div class="content-card card">
+                <p>
+                    We develop modern, responsive, and high-performance web applications that deliver excellent 
+                    user experiences across all devices.
+                </p>
+                <div>
+                    <p class="we-provide">Our web development services include:</p>
+                    <ul class="list-provide">
+                        <li>Business websites</li>
+                        <li>Customer portals</li>
+                        <li>Dashboard applications</li>
+                        <li>E-commerce platforms</li>
+                        <li>Progressive web applications</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div>
+                <h2>Artificial Intelligence & Machine Learning Solutions</h2>
+            </div>
+            <div class="content-card card">
+                <p>
+                    We help businesses leverage artificial intelligence to automate tasks, 
+                    improve decision-making, and create smarter digital experiences.
+
+                </p>
+                <div>
+                    <p class="we-provide">AI solutions we build:</p>
+                    <ul class="list-provide">
+                        <li>AI-powered applications</li>
+                        <li>Intelligent chatbots</li>
+                        <li>Machine learning models</li>
+                        <li>Data analysis systems</li>
+                        <li>Process automation solutions</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div>
+                <h2>Cloud & DevOps Services</h2>
+            </div>
+            <div class="content-card card">
+                <p>
+                   We provide reliable cloud solutions that improve scalability, security, and application performance.
+                </p>
+                <div>
+                    <p class="we-provide">Our cloud services include:</p>
+                    <ul class="list-provide">
+                        <li>Cloud migration</li>
+                        <li>Cloud infrastructure setup</li>
+                        <li>Application deployment</li>
+                        <li>CI/CD automation</li>
+                        <li>Performance optimization</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div>
+                <h2>API Development & Integration</h2>
+            </div>
+            <div class="content-card card">
+                <p>
+                    We design and develop robust APIs that enable seamless integration between different systems and applications.
+
+                </p>
+                <div>
+                    <p class="we-provide">API services we offer:</p>
+                    <ul class="list-provide">
+                        <li>API design and development</li>
+                        <li>Third-party integration</li>
+                        <li>API documentation and support</li>
+                        <li>API security and compliance</li>
+                        <li>API performance optimization</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="services-section">
+        <div class="services-shell">
+            <div class="section-heading centered">
+                <p class="section-label">Why Choose SaaS Labs?</p>
+            </div>
+
+            <div class="value-grid">
+                <article class="value-card card">
+                    <h4>Modern Technology Approach</h4>
+                    <p>We use modern frameworks, cloud platforms, and development practices to create technology solutions
+                        that are reliable, scalable, and future-ready.</p>
+                </article>
+                <article class="value-card card">
+                    <h4>Security-Focused Development</h4>
+                    <p>Security is integrated throughout our development process to protect your applications, data, and business operations.</p>
+                </article>
+                <article class="value-card card">
+                    <h4>Business-Driven Solutions</h4>
+                    <p>We focus on understanding your business goals and building solutions that deliver measurable value.</p>
+                </article>
+                <article class="value-card card">
+                    <h4>Scalable Architecture</h4>
+                    <p>Our solutions are designed to support business growth, increased users, 
+                        and evolving technology requirements.</p>
+                </article>
+            </div>
+        </div>
+    </section>
+    <section class="services-section muted-section">
+        <div class="services-shell">
+            <div class="section-heading centered">
+                <p class="section-label">Our Development Process</p>
+            </div>
+
+            <div class="mission-grid">
+                <article class="info-card card">
+                    <h3>1. Discovery</h3>
+                    <p>We understand your business objectives, 
+                        challenges, target users, and technical requirements before starting development.
+                    </p>
+                </article>
+
+                <article class="info-card card">
+                    <h3>2. Planning</h3>
+                    <p>
+                        We create a detailed plan outlining the scope, timeline, and resources needed for the project.
+                    </p>
+                </article>
+                <article class="info-card card">
+                    <h3>3. Development</h3>
+                    <p>
+                        We build your solution using modern technologies and best practices.
+                    </p>
+                </article>
+                <article class="info-card card">
+                    <h3>4. Deployment</h3>
+                    <p>
+                        We deploy your solution in a secure and efficient manner, 
+                        ensuring minimal disruption to your business operations.
+                    </p>
+                </article>
+            </div>
+        </div>
+    </section>
+
+    <section class="services-section muted-section">
+        <div class="services-shell">
+            <div class="section-heading centered">
+                <p class="section-label">Technology Stack</p>
+                <h2>We work with modern technologies to build reliable digital solutions</h2>
+            </div>
+            <div class="tech-row">
+                <div class="tech-circle">
+                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg" alt="Python">
+                </div>
+
+                <div class="tech-circle">
+                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg" alt="JavaScript">
+                </div>
+
+                <div class="tech-circle">
+                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg" alt="React">
+                </div>
+
+                <div class="tech-circle">
+                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/django/django-plain.svg" alt="Django">
+                </div>
+
+                <div class="tech-circle">
+                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/flask/flask-original.svg" alt="Flask">
+                </div>
+
+                <div class="tech-circle">
+                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/docker/docker-original.svg" alt="Docker">
+                </div>
+
+                <div class="tech-circle">
+                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/amazonwebservices/amazonwebservices-original-wordmark.svg" alt="AWS">
+                </div>
+
+                <div class="tech-circle">
+                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/postgresql/postgresql-original.svg" alt="PostgreSQL">
+                </div>
+
+                <div class="tech-circle">
+                <img src="https://cdn-icons-png.flaticon.com/512/2165/2165004.png" alt="REST API">
+                </div>
+
+                <div class="tech-circle">
+                <img src="https://cdn-icons-png.flaticon.com/512/2103/2103633.png" alt="Machine Learning">
+                </div>
+            </div>
+    </section>
+
+    <section class="services-section cta-section" id="contact">
+        <div class="services-shell cta-card card">
+            <p class="section-label">Contact SaaS Labs</p>
+            <h2>Ready to Build Your Next Digital Product?</h2>
+            <p>
+                SaaS Labs helps businesses create secure, scalable, and intelligent software solutions that drive growth.
+                Whether you need custom software, AI automation, cloud solutions, or a complete SaaS product, our team is ready to help you build the future.
+            </p>
+            <a href="mailto:contact@SaaSLabs.com" class="primary-action">Contact Us</a>
+        </div>
+    </section>
+</main>
+
+<footer class="footer">
+    <p>&copy; 2026 SaaS Labs. All rights reserved.</p>
+</footer>
+
+<script src="/static/assets/js/services.js"></script>
+
+</body>
+</html>

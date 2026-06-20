@@ -1,0 +1,1 @@
+genrate compleet context abot my company and it all thing in readme.md and also about project tech stack and all not chat direct data
