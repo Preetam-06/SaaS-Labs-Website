@@ -21,13 +21,18 @@ def sitemap_page():
 
 @routes.route("/robots.txt")
 def robots():
-    return send_from_directory("static", "robots.txt")
+    return send_from_directory(
+        os.path.join(BASE_DIR, "assets"),
+        "robots.txt"
+    )
 
 
 @routes.route("/sitemap.xml")
 def sitemap_xml():
-    return send_from_directory("static", "sitemap.xml")
-
+    return send_from_directory(
+        os.path.join(BASE_DIR, "assets"),
+        "sitemap.xml"
+    )
 
 @routes.route("/")
 def index():
