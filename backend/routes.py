@@ -18,21 +18,14 @@ def load_data():
 def sitemap_page():
     return render_template("sitemap.html")
 
-
 @routes.route("/robots.txt")
 def robots():
-    return send_from_directory(
-        os.path.join(BASE_DIR, "assets"),
-        "robots.txt"
-    )
+    return send_from_directory("static", "robots.txt")
 
 
 @routes.route("/sitemap.xml")
 def sitemap_xml():
-    return send_from_directory(
-        os.path.join(BASE_DIR, "assets"),
-        "sitemap.xml"
-    )
+    return send_from_directory("static", "sitemap.xml")
 
 @routes.route("/")
 def index():
