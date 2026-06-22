@@ -33,3 +33,60 @@
         </ul>
     </div>
 </nav>
+<section class="home_container">
+    <h1 class="h1_home">SaaS Labs Website Sitemap</h1>
+    <p>Explore all pages of our website:</p>
+</section>
+<ul>
+    <li>
+        <a href="{{ url_for('routes.index') }}">
+            Home
+        </a>
+    </li>
+
+    <li>
+        <a href="{{ url_for('routes.about') }}">
+            About
+        </a>
+    </li>
+
+    <li>
+        <a href="{{ url_for('routes.services') }}">
+            Services
+        </a>
+    </li>
+
+    <li>
+        <a href="{{ url_for('routes.blogs') }}">
+            Blogs
+        </a>
+    </li>
+
+    <li>
+        <a href="{{ url_for('routes.faqs') }}">
+            FAQs
+        </a>
+    </li>
+</ul>
+
+<h2>SEO Files</h2>
+
+<ul>
+    <li>
+        <a href="/sitemap.xml">
+            XML Sitemap
+        </a>
+    </li>
+
+    <li>
+        <a href="/robots.txt">
+            Robots.txt
+        </a>
+    </li>
+</ul>
+<footer class="footer">
+    <p>© 2026 SaaS Labs. All rights reserved.</p>
+    <a href="/sitemap">Sitemap</a>
+</footer>
+</body>
+</html>
