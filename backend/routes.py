@@ -1,4 +1,6 @@
 from flask import Blueprint, render_template
+from flask import send_from_directory
+
 import json
 import os
 
@@ -17,6 +19,17 @@ def load_data():
         return json.load(file)
 
 
+@app.route("/sitemap")
+def sitemap_page():
+    return render_template("sitemap.html")
+
+@app.route("/robots.txt")
+def robots():
+    return send_from_directory("static", "robots.txt")
+
+@app.route("/sitemap.xml")
+def sitemap_xml():
+    return send_from_directory("static", "sitemap.xml")
 
 @routes.route("/")
 def index():
